@@ -1,0 +1,20 @@
+mixin nav-content()
+  ul
+    li: a(href="#about") About
+    li: a(href="#works") Works
+    li: a(href="#articles") Articles
+    li: a(href="#youtube") Youtube
+    li: a(href="#contact") Contact
+
+.mobile-nav
+  +nav-content()
+
+header
+  .header-position
+    h1.logo mg
+    nav.site-nav
+      +nav-content()
+      
+    a(href="mailto:maysssam@gmail.com").email-link +mail me
+    
+    .mobile-nav-toggle: span
