@@ -407,7 +407,12 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .home-wrap header .logo {
-    background-color: pink;
+    overflow: hidden;
+    text-indent: 101%;
+    white-space: nowrap;
+    background-image: url(/assets/img/logo-maysam.svg);
+    background-repeat: no-repeat;
+    background-color: white;
     background-position: center;
     background-size: contain;
     height: 80px;
