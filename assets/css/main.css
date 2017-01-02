@@ -367,6 +367,13 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+@font-face {
+  font-family: 'Fira Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Fira Mono"), local("FiraMono"), url(http://fonts.gstatic.com/s/firamono/v3/SlRWfq1zeqXiYWAN-lnG-pBw1xU1rKptJj_0jans920.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000; }
+
 body {
   background-color: lightgray;
   font-size: 20px;
@@ -537,3 +544,36 @@ a {
   @media (max-width: 775px) {
     .home-wrap {
       display: block; } }
+
+.home-sections {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
+  .home-sections section {
+    padding: 50px 0; }
+  .home-sections .flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.col-1 {
+  max-width: 300px;
+  margin: 0 10px;
+  background: pink; }
+
+@media (max-width: 640px) {
+  .home-sections .flex {
+    display: block; }
+  .col-1 {
+    max-width: 100%; } }
