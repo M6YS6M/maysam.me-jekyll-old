@@ -9,10 +9,20 @@
   section
     padding: 50px 0
 
+  //flex class disply
   .flex
     display: flex
     flex-direction: row
+
+  .flex--center
     justify-content: center
+
+  .flex--space-around
+    justify-content: space-around
+
+  .order-first
+    order: -1
+
 
 //columns
 .col-1
@@ -20,9 +30,22 @@
   margin: 0 10px
   background: pink
 
+.col-2
+  max-width: 620px
+  margin: 0 10px
+  background: lightblue
+
+.col-50
+  width: 50%
+  background: yellow
+
+
 @media (max-width: 640px)
   .home-sections .flex
     display: block
 
   .col-1
     max-width: 100%
+
+  .col-50
+    width: auto
