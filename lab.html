@@ -1,0 +1,10 @@
+---
+layout: default
+title: lab
+---
+{% for lab in site.lab %}
+  <div class="lab">
+    <h2><img src="{{lab.image_path}}" alt="{{lab.title}}" /> {{ lab.title }}</h2>
+      {{ lab.content }}
+  </div>
+{% endfor %}
