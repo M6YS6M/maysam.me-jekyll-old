@@ -4,7 +4,8 @@ title: lab
 ---
 {% for lab in site.lab %}
   <div class="lab">
-    <h2><img src="{{lab.image_path}}" alt="{{lab.title}}" /> {{ lab.title }}</h2>
+    <h2>{{ lab.title }} </h2>
+    <img src="{{lab.image_path}}" >
       {{ lab.content }}
   </div>
 {% endfor %}

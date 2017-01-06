@@ -1,5 +1,5 @@
 ---
-image_path: /lab/box/thumbpic1.jpeg
+image_path: /lab/box3/thumbpic1.jpeg
 title: box
 ---
 
