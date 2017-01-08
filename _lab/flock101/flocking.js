@@ -6,7 +6,7 @@ function setup() {
   canvas.class("lemon");
 
   // Add an initial set of boids into the system
-  for (var i = 0; i < 100; i++) {
+  for (var i = 0; i < 10; i++) {
     boids[i] = new Boid(random(width), random(height));
   }
 }

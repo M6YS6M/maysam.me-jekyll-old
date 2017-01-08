@@ -1,0 +1,59 @@
+section.lab
+  background: lightblue
+
+  .col-1
+    display: flex
+    align-items: center
+
+  .home-cta
+    color: white
+    //background: darkblue
+
+  .lab-wrap
+    margin: -50px 0
+    +clearfix
+  .lab-thumb
+
+    display: block
+    background:
+      size: cover
+      position: center
+    border: 2px solid white
+    width: calc(25% - 4px)
+    float: left
+    position: relative
+    overflow: hidden
+
+
+
+    &:after
+      content: ''
+      display: block
+      padding-top: 100%
+
+.lab-meta
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background: fade-out(lightgray, 0.3)
+  color: white
+  padding: 10px
+  transform: translate(0%, 100%)
+  transition: all 200ms ease-in-out
+  opacity: 0
+
+.name
+  font-size: 16px
+  line-height: 1.2
+.date
+  font-style: italic
+
+.lab-thumb:hover .lab-meta
+  opacity: 1
+  transform: translate(0%, 0%)
+
+//@media(max-width: 640px)
+//  .desc-wrap
+  //  margin-top: 100px

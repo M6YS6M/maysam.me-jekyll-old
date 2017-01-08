@@ -1,6 +1,5 @@
 ---
-layout: lab
-image_path: /lab/box1/thumbpic1.jpeg
+image_path: /work/box/thumb/thumbpic1.jpeg
 title: box
 ---
 

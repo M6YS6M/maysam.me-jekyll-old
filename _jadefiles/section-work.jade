@@ -1,0 +1,19 @@
+section.work
+  .flex.flex--center
+    
+      
+    .col-50
+      .work-wrap
+        {% for work in site.work limit:12 %}
+        a(href="{{work.url}}" style="background-image: url({{work.image_path}}").work-thumb
+          .work-meta
+            .name {{work.title}}
+            
+          {% endfor %}
+          
+      
+    .col-50.flex.flex--center.order-first
+      .col-1
+        .desc-wrap
+          p.home-lead.outdented  ... writing and working ...
+          a(href="").home-cta See All Articles

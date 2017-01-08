@@ -2,102 +2,15 @@
 //footer.home-footer
   //a(href:"mailto:info@maysam.me") info@maysam.me
 //copyright
-       //© {{ site.title }} 
-footer
- .container.beautiful-jekyll-footer
-   .row
-     .col-lg-8.col-lg-offset-2.col-md-10.col-md-offset-1
-       ul.list-inline.text-center.footer-links
-         | {% if site.author.facebook and site.footer-links-active.facebook %}
-         li
-           a(href='https://www.facebook.com/{{ site.author.facebook }}', title='Facebook')
-             span.fa-stack.fa-lg
-               i.fa.fa-circle.fa-stack-2x
-               i.fa.fa-facebook.fa-stack-1x.fa-inverse
-         |           {% endif %}
-         |           {% if site.author.github and site.footer-links-active.github %}
-         li
-           a(href='https://github.com/{{ site.author.github }}', title='GitHub')
-             span.fa-stack.fa-lg
-               i.fa.fa-circle.fa-stack-2x
-               i.fa.fa-github.fa-stack-1x.fa-inverse
-         |           {% endif %}
-         | 		  {% if site.author.twitter and site.footer-links-active.twitter %}
-         li
-           a(href='https://twitter.com/{{ site.author.twitter }}', title='Twitter')
-             span.fa-stack.fa-lg
-               i.fa.fa-circle.fa-stack-2x
-               i.fa.fa-twitter.fa-stack-1x.fa-inverse
-         |           {% endif %}
-         |      {% if site.author.instagram and site.footer-links-active.instagram %}
-         li
-           a(href='https://www.instagram.com/{{ site.author.instagram }}', title='Instagram')
-             span.fa-stack.fa-lg
-               i.fa.fa-circle.fa-stack-2x
-               i.fa.fa-instagram.fa-stack-1x.fa-inverse
-         |           {% endif %}
-         | 		  {% if site.author.email and site.footer-links-active.email %}
-         li
-           a(href='mailto:{{ site.author.email }}', title='Email me')
-             span.fa-stack.fa-lg
-               i.fa.fa-circle.fa-stack-2x
-               i.fa.fa-envelope.fa-stack-1x.fa-inverse
-         |           {% endif %}
-         | 		  {% if site.author.linkedin and site.footer-links-active.linkedin %}
-         li
-           a(href='https://linkedin.com/in/{{ site.author.linkedin }}', title='LinkedIn')
-             span.fa-stack.fa-lg
-               i.fa.fa-circle.fa-stack-2x
-               i.fa.fa-linkedin.fa-stack-1x.fa-inverse
-         |           {% endif %}
-         | 		  {% if site.author.stackoverflow and site.footer-links-active.stackoverflow %}
-         li
-           a(href='https://stackoverflow.com/story/{{ site.author.stackoverflow }}', title='StackOverflow')
-             span.fa-stack.fa-lg
-               i.fa.fa-circle.fa-stack-2x
-               i.fa.fa-stack-overflow.fa-stack-1x.fa-inverse
-         |           {% endif %}
-         | 		  {% if site.author.mathexchange and site.footer-links-active.mathexchange %}
-         li
-           a(href='https://math.stackexchange.com/users/{{ site.author.mathexchange }}', title='MathExchange')
-             span.fa-stack.fa-lg
-               i.fa.fa-circle.fa-stack-2x
-               i.fa.fa-stack-exchange.fa-stack-1x.fa-inverse
-         |           {% endif %}
-         | 		  {% if site.footer-links-active.rss %}
-         li
-           a(href="{{ '/feed.xml' | prepend: site.baseurl }}", title='RSS')
-             span.fa-stack.fa-lg
-               i.fa.fa-circle.fa-stack-2x
-               i.fa.fa-rss.fa-stack-1x.fa-inverse
-         |           {% endif %}
-       p.copyright.text-muted
-         | {{ site.author.name }}
-         | • 
-         | {{ site.time | date: '%Y' }}
-         | {% if site.url-pretty %}
-         | • 
-         a(href='{{ site.url }}') {{ site.url-pretty }}
-         | 		  {% endif %}
-       // Please don't remove this, keep my open source work credited :)
-       p.theme-by.text-muted
-         | Theme by
-         a(href='http://deanattali.com/beautiful-jekyll/') beautiful-jekyll
-
-
-#wrapper
-  #leftcolumn
-    a(href='https://www.instagram.com/maysssam/', target='_blank')
-      img(src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-insta-bw-32.svg', onmouseover="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-insta-co-32.svg'", onmouseout="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-insta-bw-32.svg'", alt='Instagram', title='')
-    a(href='https://www.facebook.com/zimarty/', target='_blank')
-      img(src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-fa-bw-32.svg', onmouseover="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons_fa_color-32.svg'", onmouseout="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-fa-bw-32.svg'", alt='Facebook', title='')
-    a(rel='publisher', href='https://plus.google.com/u/0/+Zimartypage', target='_blank')
-      img(src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-go-bw-32.svg', onmouseover="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-go-co-32.svg'", onmouseout="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-go-bw-32.svg'", alt='Google Plus', title='')
-    a(href='https://twitter.com/zimartydotcom', target='_blank')
-      img(src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-tw-bw-32.svg', onmouseover="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-tw-co-32.svg'", onmouseout="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-tw-bw-32.svg'", alt='Tweet', title='')
-  #rightcolumn
-    a(style='color: #808080; ', href='http://zimarty.com') © 2016 Zimarty
-    |  
-    a(style='color: #808080;', href='http://zimarty.com/privacy-policy/') Privacy Policy 
-    a(style='color: #808080;', href='http://zimarty.com/privacy-policy/') |
-    a(style='color: #808080;', href='http://zimarty.com/contact')  Contact Us
+//footer.footer
+  //a(href='https://www.instagram.com/maysssam/', target='_blank')
+    //img(src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-insta-bw-32.svg', onmouseover="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-insta-co-32.svg'", onmouseout="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-insta-bw-32.svg'", alt='Instagram', title='')
+  //a(href='https://www.facebook.com/zimarty/', target='_blank')
+    //img(src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-fa-bw-32.svg', onmouseover="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons_fa_color-32.svg'", onmouseout="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-fa-bw-32.svg'", alt='Facebook', title='')
+  //a(rel='publisher', href='https://plus.google.com/u/0/+Zimartypage', target='_blank')
+  //  img(src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-go-bw-32.svg', onmouseover="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-go-co-32.svg'", onmouseout="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-go-bw-32.svg'", alt='Google Plus', title='')
+  //a(href='https://twitter.com/zimartydotcom', target='_blank')
+    //img(src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-tw-bw-32.svg', onmouseover="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-tw-co-32.svg'", onmouseout="this.src='http://zimarty.com/image_Lib/zimarty/social_Icon/svg/Flat-Social-Icons-tw-bw-32.svg'", alt='Tweet', title='')
+  //a(href="http://maysam.me") maysam.me
+  //a(href="mailto:maysssam@gmail.com").email-link +Contact Me
+  

@@ -1,0 +1,19 @@
+section.lab
+  .flex.flex--center
+    
+      
+    .col-50
+      .lab-wrap
+        {% for lab in site.lab limit:12 %}
+        a(href="{{lab.url}}" style="background-image: url({{lab.image_path}}").lab-thumb
+          .lab-meta
+            .name {{lab.title}}
+            
+          {% endfor %}
+          
+      
+    .col-50.flex.flex--center.order-first
+      .col-1
+        .desc-wrap
+          p.home-lead.outdented  ... writing and labing ...
+          a(href="").home-cta See All Articles
