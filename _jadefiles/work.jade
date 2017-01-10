@@ -5,7 +5,7 @@ page.work
     
       .work-wrap
         {% for work in site.work  %}
-        a(href="{{work.url}}" style="background-image: url({{work.image_path}}").work-thumb
+        a(href="{{ site.baseurl }}{{work.url}}" style="background-image: url({{ site.baseurl }}{{work.image_path}}").work-thumb
           .work-meta
             .name {{work.title}}
             
