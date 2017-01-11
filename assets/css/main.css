@@ -680,8 +680,8 @@ section.lab {
           transform: translate(0%, 0%); }
 
 section.work {
-  background: lightblue; }
-  section.work .col-1 {
+  background: #b3ffff; }
+  section.work .col-1 .cal-1 {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -691,7 +691,7 @@ section.work {
         -ms-flex-align: center;
             align-items: center; }
   section.work .home-cta {
-    color: white; }
+    color: blue; }
   section.work .work-wrap {
     margin: -50px 0; }
     section.work .work-wrap::after {
@@ -887,6 +887,69 @@ page.work {
   font-style: italic; }
 
 .work-thumb:hover .work-meta {
+  opacity: 1;
+  -webkit-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%); }
+
+page.lab {
+  background: lightblue; }
+  page.lab .col-1 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  page.lab .home-cta {
+    color: white; }
+  page.lab .lab-wrap {
+    margin: -50px 0; }
+    page.lab .lab-wrap::after {
+      clear: both;
+      content: "";
+      display: table; }
+  page.lab .lab-thumb {
+    display: block;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid white;
+    width: -webkit-calc(20% - 4px);
+    width: calc(20% - 4px);
+    float: left;
+    position: relative;
+    overflow: hidden; }
+    page.lab .lab-thumb:after {
+      content: '';
+      display: block;
+      padding-top: 100%; }
+
+.lab-meta {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(211, 211, 211, 0.7);
+  color: white;
+  padding: 10px;
+  -webkit-transform: translate(0%, 100%);
+      -ms-transform: translate(0%, 100%);
+          transform: translate(0%, 100%);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  opacity: 0; }
+
+.name {
+  font-size: 16px;
+  line-height: 1.2; }
+
+.date {
+  font-style: italic; }
+
+.lab-thumb:hover .lab-meta {
   opacity: 1;
   -webkit-transform: translate(0%, 0%);
       -ms-transform: translate(0%, 0%);

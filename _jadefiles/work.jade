@@ -4,10 +4,11 @@ page.work
       
     
       .work-wrap
-        {% for work in site.work  %}
-        a(href="{{ site.baseurl }}{{work.url}}" style="background-image: url({{ site.baseurl }}{{work.image_path}})").work-thumb
+        {% assign items = site.work | sort: 'date' | reverse  %}
+        {% for item in items  %}
+        a(href="{{ site.baseurl }}{{item.url}}" style="background-image: url({{ site.baseurl }}{{item.image_path}})").work-thumb
           .work-meta
-            .name {{work.title}}
-            
+            .name {{item.title}}
+            .date {{item.date | date: " %b , %Y"}}
           {% endfor %}
           

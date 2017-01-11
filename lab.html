@@ -1,11 +1,5 @@
 ---
 layout: default
-title: lab
+title: work
 ---
-{% for lab in site.lab %}
-  <div class="lab">
-    <h2><a href="{{ lab.url }}">{{ lab.title }} </h2>
-    <img src="{{lab.image_path}}" >
-
-  </div>
-{% endfor %}
+{% include lab.html %}
