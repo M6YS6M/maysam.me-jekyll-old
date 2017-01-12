@@ -1,20 +1,22 @@
 .home-wrap
   header
-    width: 135px
+    //width: 135px
     background: white
-    padding: 30px 0
+    padding: 300px 0s
 
     .header-position
+      width: 40%
+      //background: blue
       position: fixed
       top: 20px
-      bottom: 20px
-      left: 0
-      width: 135px
+      //bottom: 20px
+      //left: 20px
+      //width: 135px
       display: flex
-      flex-direction: column
-      justify-content: space-between
+      flex-direction: row
+      justify-content: space-around
 
-    .logo
+    //.logo
       +hide-text
       background:
         image: url(../img/logo-maysam.svg)
@@ -28,17 +30,23 @@
 
     .site-nav
       ul
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        width: 100%
         list-style: none
-        margin: 30px 0
+        margin: 10px 0
         padding: 0 30px 0 0
-        text-align: right
+        text-align: center
+        //height: 80px
 
         li
-          margin-bottom: 20px
+          margin-bottom: 1s0px
+          margin: 10px
           &:last-child
             margin-bottom: 0
 
-    .email-link
+    //.email-link
       display: block
       text-align: right
       padding: 20px

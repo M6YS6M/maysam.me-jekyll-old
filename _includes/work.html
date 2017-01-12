@@ -1,2 +1,2 @@
-<page class="work"><div class="flex flex--center"><div class="work-wrap">{% assign items = site.work | sort: 'date' | reverse  %}
-{% for item in items  %}<a href="{{ site.baseurl }}{{item.url}}" style="background-image: url({{ site.baseurl }}{{item.image_path}})" class="work-thumb"><div class="work-meta"><div class="name">{{item.title}}</div><div class="date">{{item.date | date: " %b , %Y"}}</div></div>{% endfor %}</a></div></div></page>
+<page class="work">{% assign items = site.work | sort: 'date' | reverse  %}
+{% for item in items %}<a href="{{ site.baseurl }}{{item.url}}" style="background-image: url({{ site.baseurl }}{{item.image_path}})" class="work-thumb"><div class="work-meta"><div class="name">{{item.title}}</div><div class="date">{{item.date | date: " %b , %Y"}}</div></div>{% endfor %}</a></page>

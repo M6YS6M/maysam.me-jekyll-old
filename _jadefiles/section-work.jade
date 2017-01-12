@@ -1,21 +1,18 @@
 section.work
   .flex.flex--center
-    
-      
     .col-50
       .work-wrap
         {% assign items = site.work | sort: 'date' | reverse  %}
         {% for item in items limit: 12 %}
-        
-        a(href="{{ site.baseurl }}{{item.url}}" style="background-image: url({{ site.baseurl }}{{item.image_path}})").work-thumb
+        a(href="{{ site.baseurl }}{{item.url}}" style="background-image: url({{ site.baseurl }} {{item.image_path}})").work-thumb
           .work-meta
             .name {{item.title}}
             .date {{item.date | date: " %b %d, %Y"}}
           {% endfor %}
           
       
-    .col-50.flex.flex--center.order-first
+    .col-1.flex.flex--center.order-first
       .col-1
         .desc-wrap
-          //p.home-lead.outdented  ... Work ...
-          a(href="work.html").home-cta See All Project
+          p.home-lead.outdented  ... Work ...
+          a(href="work.html").home-cta See All Articles
