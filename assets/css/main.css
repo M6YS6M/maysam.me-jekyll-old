@@ -706,7 +706,7 @@ section.work {
     margin: 1px;
     width: Calc(24%);
     -webkit-filter: grayscale(50%) sepia(20%);
-    filter: grayscale(90%) sepia(10%);
+    filter: grayscale(60%) sepia(10%);
     position: relative;
     overflow: hidden; }
     section.work .work-thumb:after {
