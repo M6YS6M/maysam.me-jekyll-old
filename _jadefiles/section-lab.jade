@@ -1,20 +1,19 @@
 section.lab
   .flex.flex--center
-    
-      
-    .col-50
+    .col-50.flex--left
       .lab-wrap
         {% assign items = site.lab | sort: 'date' | reverse  %}
-        {% for item in items limit:12 %}
-        a(href="{{item.url}}" style="background-image: url({{item.image_path}})").lab-thumb
+        {% for item in items limit: 8 %}
+        a(href="{{ site.baseurl }}{{item.url}}" style="background-image: url({{ site.baseurl }} {{item.image_path}})").lab-thumb
           .lab-meta
             .name {{item.title}}
-            .date {{item.date | date: " %b , %Y"}}
+            .date {{item.date | date: " %b %d, %Y"}}
           {% endfor %}
           
-      
-    .col-50.flex.flex--center.order-first
+    .col-1.flex.flex--left
       .col-1
         .desc-wrap
-          p.home-lead.outdented  ... Lab ...
-          a(href="").home-cta See All Articles
+          //p.home-lead.outdented   lab ...
+          a(href="lab.html").home-lead.outdented SeeMore...
+
+    

@@ -1,17 +1,16 @@
 section.blog
   .flex.flex--center
-    .col-50
+    .col-50.flex--left
       .blog-wrap
-        {% for post in site.posts limit:12 %}
+        {% for post in site.posts limit:8 %}
         a(href="{{post.url}}" style="background-image: url(assets/img/posts/thumb/{{post.thumbnail}})").blog-thumb
           .blog-meta
             .name {{post.title}}
             .date {{post.date | date: " %b %d, %Y"}}
           {% endfor %}
-          
-      
-    .col-50.flex.flex--center.order-first
+
+    .col-1.flex.flex--left
       .col-1
         .desc-wrap
-          p.home-lead.outdented  ... Blog ...
-          a(href="").home-cta See All Articles
+          //p.home-lead.outdented   lab ...
+          a(href="lab.html").home-lead.outdented SeeMore...

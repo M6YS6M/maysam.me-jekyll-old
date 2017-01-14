@@ -1,28 +1,49 @@
 section.blog
-  background: lightblue
+  //background: lightgray
+  margin-left: 10px
 
   .col-1
     display: flex
     align-items: center
+
+  .col-50
+    //display: flex
+    //align-items: right
 
   .home-cta
     color: white
     //background: darkblue
 
   .blog-wrap
-    margin: -50px 0
-    +clearfix
-  .blog-thumb
 
+    display: flex
+    //align-items: right
+    //flex-direction:row
+    flex-wrap: wrap
+    //justify-content: right
+    //background: blue
+    //margin-right: 0
+    //margin-left: 0
+    //margin: -50px 0
+    //+clearfix
+
+
+
+  .blog-thumb
     display: block
     background:
       size: cover
       position: center
-    border: 2px solid white
-    width: calc(25% - 4px)
-    float: left
+    //border: 1px solid gray
+    margin: 1px
+    width: Calc(25% - 1)
+    -webkit-filter: grayscale(50%) sepia(20%)/* Safari */
+    filter: grayscale(90%) sepia(10%)
+    //float: right
     position: relative
     overflow: hidden
+
+
 
 
 
@@ -37,7 +58,7 @@ section.blog
   left: 0
   right: 0
   bottom: 0
-  background: fade-out(lightgray, 0.3)
+  background: fade-out(darkgray, 0.3)
   color: white
   padding: 10px
   transform: translate(0%, 100%)
@@ -47,8 +68,10 @@ section.blog
 .name
   font-size: 16px
   line-height: 1.2
+  color: black
 .date
   font-style: italic
+  color: black
 
 .blog-thumb:hover .blog-meta
   opacity: 1
