@@ -1,6 +1,6 @@
 section.blog
   .flex.flex--center
-    .col-50.flex--left
+    .col-75.flex--left
       .blog-wrap
         {% for post in site.posts limit:8 %}
         a(href="{{post.url}}" style="background-image: url(assets/img/posts/thumb/{{post.thumbnail}})").blog-thumb
