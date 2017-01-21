@@ -5,12 +5,11 @@ script(src='http://brangerbriz.net/labs/threejs_playGnd/js/Detector.js')
 
 
 section.landing
-  .flex.flex--space-around
-    .col-50
-      canvas#myCanvas(width="800px" height="600px")
+  #boxCanvas(style="position:absolute; top:160px; right:60%")
+    canvas#myCanvas(width="400px" height="400px" )
       script(src='assets/js/home_box.js')
 
-    .col-50.order-first
-      //script(src='assets/js/home_typer.js')
+  .col-50.order-first
+    script(src='assets/js/home_typer.js')
 
       

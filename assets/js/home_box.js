@@ -1,15 +1,18 @@
 if ( ! Detector.webgl ) Detector.addGetWebGLMessage();
 
 
-var camera, scene, renderer, w, h;
+var camera, scene, renderer, w, h, canvas;
 var geometry, material, mesh;
 
 
-  var canvas = document.getElementById("myCanvas");
+
+  canvas = document.getElementById("myCanvas");
+  //w = window.innerWidth;
+  //h = window.innerHeight;
   var w = canvas.width;
   var h = canvas.height;
 
-  var renderer = new THREE.WebGLRenderer({canvas: document.getElementById("myCanvas")});
+  var renderer = new THREE.WebGLRenderer({canvas});
 
   //renderer.setClearColor(0x00ff00);
   //renderer.setPixelRatio(window.devicePixelRatio);
@@ -23,7 +26,7 @@ var geometry, material, mesh;
   var geometry = new THREE.CubeGeometry(20, 20, 20);
   var material = new THREE.MeshBasicMaterial({shading: THREE.SmoothShading, color: 0x000000, wireframe: true, wireframeLinewidth: 8, transparent: true, opacity: 1});
   var mesh = new THREE.Mesh(geometry, material);
-  //mesh.position.y = 100;
+  //mesh.position.x = 100;
   scene.add(mesh);
   requestAnimationFrame( render );
 
