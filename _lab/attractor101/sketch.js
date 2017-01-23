@@ -12,14 +12,14 @@ function setup() {
 
 function draw() {
   clear();
-  //background(255);
+  background(2);
 
-  for(var i = 0; i <= width; i += 40) {
-    for(var j = 0; j <= height; j += 40) {
+  for(var i = 0; i <= width; i += 20) {
+    for(var j = 0; j <= height; j += 20) {
       var size = dist(mouseX, mouseY, i, j);
       size = size/max_distance * 50;
       ellipse(i, j, size, size);
-      noFill();
+      fill((mouseX*255)/height,(mouseY*255)/width,200);
     }
   }
 }
