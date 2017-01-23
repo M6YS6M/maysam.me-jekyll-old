@@ -957,9 +957,12 @@ page.lab {
     display: block;
     background-size: cover;
     background-position: center;
-    border: 2px solid white;
+    border: 1px solid white;
     width: -webkit-calc(20% - 4px);
     width: calc(20% - 4px);
+    padding: 1px;
+    -webkit-filter: grayscale(90%) sepia(20%);
+    filter: grayscale(90%) sepia(10%);
     float: left;
     position: relative;
     overflow: hidden; }
@@ -976,7 +979,7 @@ page.lab {
   bottom: 0;
   background: rgba(211, 211, 211, 0.7);
   color: white;
-  padding: 10px;
+  padding: 5px;
   -webkit-transform: translate(0%, 100%);
       -ms-transform: translate(0%, 100%);
           transform: translate(0%, 100%);
