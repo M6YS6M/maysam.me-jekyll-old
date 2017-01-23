@@ -752,7 +752,7 @@ section.work {
 
 /* --- Footer --- */
 .footer {
-  background: white;
+  padding: 120px;
   margin-top: 20px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -763,9 +763,10 @@ section.work {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around; }
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .type-it {
   position: absolute;
