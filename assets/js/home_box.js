@@ -7,10 +7,10 @@ var geometry, material, mesh;
 
 
   canvas = document.getElementById("myCanvas");
-  w = window.innerWidth;
-  h = window.innerHeight;
-  //var w = canvas.width;
-  //var h = canvas.height;
+  //w = window.innerWidth;
+  //h = window.innerHeight;
+  var w = canvas.width;
+  var h = canvas.height;
 
   var renderer = new THREE.WebGLRenderer({canvas});
 

@@ -42,10 +42,10 @@
         justify-content: space-between
         width: 100%
         list-style: none
-        margin: 10px 0
-        padding: 0 30px 0 0
+        //margin: 10px 0
+        //padding: 0 30px 0 0
         text-align: center
-        //height: 80px
+        height: 80px
 
         li
 
@@ -59,7 +59,7 @@
       text-align: right
       padding: 20px
 
-    .mobile-nav-toggle
+    //.mobile-nav-toggle
       display: none
       width: 50px
       height: 50px
@@ -68,29 +68,29 @@
       align-items: center
       cursor: pointer
 
-      span,
-      span:before,
-      span:after
+      //span,
+      //span:before,
+    //  span:after
         content: ""
         display: block
         height: 3px
         width: 100%
         background: #333
 
-        position: relative
-        transition: all 0.3s ease-in-out
+        //position: relative
+        //transition: all 0.3s ease-in-out
 
-      span:before
+    //  span:before
         top: 15px
 
-      span:after
+    //  span:after
         top: -17px
 
 
-      &.is-open span
+    //  &.is-open span
         background: transparent
 
-      &.is-open span:before,
+    //  &.is-open span:before,
       &.is-open  span:after
         transform-origin: center
         transform: rotate(45deg)
@@ -127,7 +127,7 @@
 
       .header-position
         width: auto
-        position: relative
+        //position: relative
         top: auto
         bottom: auto
         left: auto
@@ -143,6 +143,6 @@
       .mobile-nav-toggle
         display: flex
 
-    .mobile-nav.is-open
+    //.mobile-nav.is-open
       display: block
       transform: translateY(0%)
