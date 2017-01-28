@@ -7,8 +7,8 @@ var geometry, material, mesh;
 
 
   canvas = document.getElementById("myCanvas");
-  w = window.innerWidth;
-  h = window.innerHeight;
+  w = window.innerWidth/2;
+  h = window.innerHeight/2;
   //var w = canvas.width;
   //var h = canvas.height;
 
