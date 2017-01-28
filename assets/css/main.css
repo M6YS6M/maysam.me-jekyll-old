@@ -729,7 +729,6 @@ section.work {
 
 /* --- Footer --- */
 .footer {
-  padding: 40px;
   z-index: 600;
   display: -webkit-box;
   display: -webkit-flex;
